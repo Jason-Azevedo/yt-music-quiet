@@ -5,6 +5,6 @@
   "version": "0.1",
   "action": {
     "default_popup": "index.html",
-    "default_icon": "yt-music-quiet.svg"
+    "default_icon": "yt-music-quiet.png"
   }
 }
