@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Music Quiet!",
+  "description": "A simple extension designed to control the volumn on the youtube music page.",
+  "version": "0.1",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "yt-music-quiet.svg"
+  }
+}
