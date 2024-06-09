@@ -1,23 +1,18 @@
 "use strict";
 
+import Logger from "./logger.js";
+
 export default class YTMusicQuiet {
   constructor(document) {
     this.document = document;
 
-    // Perform init actions.
-    console.log("Test!!");
+    // Setup dependencies
+    this.logger = new Logger("YTMusicQuiet");
   }
 
-  registerListeners() {
-    console.log("Registering listeners");
-  }
-
-  // UI events?
+  // TODO: Implement method or class to override volume getter and setter on video elements.
 }
 
 /********** APP SETUP **********/
 
-const ytMusicQuiet = new YTMusicQuiet();
-
-// Register listeners
-ytMusicQuiet.registerListeners();
+new YTMusicQuiet();
