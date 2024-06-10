@@ -3,8 +3,16 @@
   "name": "Youtube Music Quiet!",
   "description": "A simple extension designed to control the volumn on the youtube music page.",
   "version": "0.1",
+  "host_permissions": [
+    "https://music.youtube.com/*",
+    "http://music.youtube.com/*"
+  ],
   "action": {
     "default_popup": "index.html",
     "default_icon": "yt-music-quiet.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
   }
 }
