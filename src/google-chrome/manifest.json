@@ -15,5 +15,17 @@
   "background": {
     "service_worker": "service-worker.js",
     "type": "module"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/*", "http://music.youtube.com/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": ["<all_urls>"],
+      "resources": ["js/serviceMessages.js", "js/logger.js"]
+    }
+  ]
 }
