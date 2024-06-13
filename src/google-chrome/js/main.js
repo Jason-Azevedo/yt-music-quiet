@@ -3,14 +3,22 @@
 import Logger from "./logger.js";
 
 export default class YTMusicQuiet {
-  constructor(document) {
-    this.document = document;
-
+  constructor() {
     // Setup dependencies
     this.logger = new Logger("YTMusicQuiet");
+
+    // Setup actions
+    this.registerListeners();
   }
 
-  // TODO: Implement method or class to override volume getter and setter on video elements.
+  /////////////////////// METHODS ///////////////////////
+
+  /**
+   * Register listeners for the UI elements.
+   */
+  registerListeners() {
+    // TODO: Implement listeners
+  }
 }
 
 /********** APP SETUP **********/

@@ -3,6 +3,7 @@
   "name": "Youtube Music Quiet!",
   "description": "A simple extension designed to control the volumn on the youtube music page.",
   "version": "0.1",
+  "permissions": ["storage", "tabs", "tabCapture"],
   "host_permissions": [
     "https://music.youtube.com/*",
     "http://music.youtube.com/*"

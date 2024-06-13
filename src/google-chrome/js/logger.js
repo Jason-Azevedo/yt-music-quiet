@@ -20,7 +20,7 @@ export default class Logger {
    *
    * @param {string} message The message to log
    */
-  logInfo(message) {
+  info(message) {
     console.log(this.#formatMessage(this.prefix, message));
   }
 
@@ -31,7 +31,7 @@ export default class Logger {
    *
    * @param {string} message The message to log
    */
-  logWarning(message) {
+  warning(message) {
     console.warn(this.#formatMessage(this.prefix, message));
   }
 
@@ -42,7 +42,7 @@ export default class Logger {
    *
    * @param {string} message The message to log
    */
-  logError(message) {
+  error(message) {
     console.error(this.#formatMessage(this.prefix, message));
   }
 
