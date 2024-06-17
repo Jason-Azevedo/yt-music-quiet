@@ -1,0 +1,86 @@
+/* SETUP GLOBAL STYLING VARS */
+:root {
+    --color-background: #1a1a1a;
+
+    /* PRIMARY COLORS */
+    --color-primary: #c50000;
+
+    /* TEXT COLORS */
+    --color-text: #f1f1f1;
+
+    /* BORDER COLORS */
+    --color-border: #5a5a5a;
+    --color-border-active: #c50000;;
+
+    /* INPUT COLORS */
+    --color-input-background: #ffffff15;;
+    --color-input-background-active: #570606d3;;
+}
+
+/* REMOVE DEFAULT PADDINGS AND MARGINS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.popup {
+    width: 300px;
+    padding: 16px;
+
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.popup__header {
+    letter-spacing: 0.02rem;
+}
+
+/* INPUTS */
+
+.popup__inputs {
+    margin-top: 16px;
+}
+
+.popup__text-input,
+.popup__slider-input {
+    display: block;
+    width: 100%;
+}
+
+.popup__text-input {
+    padding: 8px;
+    margin-bottom: 16px;
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-text);
+
+    background-color: #ffffff15;
+    border: none;
+    border-bottom: 1px solid var(--color-border);
+
+    transition: .2s ease-out;
+}
+
+.popup__text-input:focus,
+.popup__text-input:hover {
+    outline: none;
+
+    border-bottom: 1px solid var(--color-border-active);
+    background-color: var(--color-input-background-active);
+}
+
+.popup__slider-input {
+
+}
+
+/* INPUT LABELS */
+.popup__input-label {
+    display: block;
+    font-size: 14px;
+    letter-spacing: .025rem;
+
+    padding-bottom: 8px;
+}

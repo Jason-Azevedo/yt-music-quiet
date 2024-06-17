@@ -9,6 +9,10 @@ export default class YTMusicQuiet {
 
     // Setup actions
     this.registerListeners();
+
+    chrome.tabCapture.getMediaStreamId({}, (stream) => {
+      console.log("Stream obtained");
+    });
   }
 
   /////////////////////// METHODS ///////////////////////

@@ -19,5 +19,9 @@
   );
 
   // Invoke the backend service with our dependencies
-  await chrome.runtime.sendMessage(ServiceMessages.scaleVolume);
+  // await chrome.runtime.sendMessage(ServiceMessages.scaleVolume);
+
+  chrome.desktopCapture.chooseDesktopMedia(["audio"], (streamId) => {
+    console.log(`Here is the audio stream ID: ${streamId}`);
+  });
 })();
