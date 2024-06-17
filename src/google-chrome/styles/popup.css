@@ -44,12 +44,14 @@
 
 .popup__text-input,
 .popup__slider-input {
-    display: block;
-    width: 100%;
 }
 
 .popup__text-input {
+    display: inline-block;
+    width: 60px;
+
     padding: 8px;
+    margin-left: auto;
     margin-bottom: 16px;
 
     text-align: center;
@@ -64,6 +66,13 @@
     transition: .2s ease-out;
 }
 
+.popup__input-text-sign {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
 .popup__text-input:focus,
 .popup__text-input:hover {
     outline: none;
@@ -73,12 +82,17 @@
 }
 
 .popup__slider-input {
+    display: block;
+    width: 100%;
+}
+
+.popup__text-input-container {
 
 }
 
 /* INPUT LABELS */
 .popup__input-label {
-    display: block;
+    display: inline-block;
     font-size: 14px;
     letter-spacing: .025rem;
 

@@ -9,8 +9,11 @@
     <h1 class="popup__header">Youtube Music Quiet!</h1>
 
     <div class="popup__inputs">
-        <label class="popup__input-label" for="numberScaleInput">Max Volume Scale</label>
-        <input id="numberScaleInput" type="text" class="popup__text-input" value="56%">
+        <div class="popup__text-input-container">
+            <label class="popup__input-label" for="numberScaleInput">Max Volume Scale</label>
+            <input id="numberScaleInput" type="number" class="popup__text-input" min="0" max="100" value="56">
+            <p class="popup__input-text-sign">%</p>
+        </div>
 
         <input id="sliderScaleInput" type="range" class="popup__slider-input" min="0" max="100">
     </div>
